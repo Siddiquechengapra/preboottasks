@@ -1,0 +1,60 @@
+                          
+
+
+
+
+                                                                                ENTERPRISE JAVASCRIPT ERROR HANDLING 
+
+
+"What do users see when there's a javascript code error on a web page ?" 
+
+  If the code is not optimised then the user will be getting a alert message which asks the user to close it manually.So as a good programmer it is our duty to make sure that every possible error is handled, in order to do that we must calculate all the error inputs a user can give and these errors should have minimum consequence and should be reversible so that the user can have a rich browsing experience 
+
+Steps to follow for achieving tangle-free web browsing experience for the user   : 
+1.Assume your code will fail 
+  This will push you to find all the wrong inputs that your program can have to crash, and one by one you will find by concentrating on doubtful area
+
+2.Log errors to the server :   
+  Let all the errors be reported back to the server rather than printing or logging them on the clients browser ,this could also be a threat to code privacy 
+
+3. We should handle error, not the browser 
+  For doing this we can use the below methods 
+*Try-catch :
+  This is a method where we include all the possible areas of error inside the try block and errors caught inside Try will be thrown out to catch block and it will handled as per the code inside catch block 
+*Window.error : 
+  This is the last stop before the browser responds ,
+Here we take use of a function which looks like 
+ Window.onerror=function(msg, url, line){
+                     log(1,msg)
+					   return true }
+If its true then the browser won't respond the error to the user (Only supported in IE and Firefox )
+
+TYPES OF ERRORS 
+1.Type coercion errors
+2.Data type errors 
+	-happens due to insufficient value checking 
+	-often occurs with function arguments
+3.Communication errors
+	-invalid URL/post data 
+	-server response status (200 and 304 are common status, otherwise it means data not received 
+	-no network connection
+	-server response content 
+
+4.Throw your own error :
+	we can define our own error for certain situations too , for example if a function to sort an array is getting a non array as an argument then we can simply write a else part to throw and log the error 
+
+ NON -FATAL ERRORS :
+	* won't interfere with users main task
+	*Affects only a portion of the page 
+	*Recovery is possible 
+	*A repeat of the function may resolve problem
+	*Don't tell the user it is not working if its not necessary 
+ FATAL ERROR :
+	*The app absolutely cannot continue 
+	*users productivity is affected significantly 
+	*Other error will occur if continued 
+	ex : Signin/signout errors 
+
+To deal with this we should have a debug mode where we should assign a variable which is globally accessible 
+Try-catch should throw error , window.error should return false 
+	

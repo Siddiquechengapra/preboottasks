@@ -1,0 +1,7 @@
+“Window” is the main javascript object or the root object in the browser, inside it only all the other objects reside .
+This can be accessed by “Window.”. This object is also called as the global object, if no declaration is mentioned for a variable, 
+then it will be taken as the property of the window object.
+
+“Window.screen” is another object which gives details about the visible screen dimensions
+
+“Window.document” or “document” is the main object of the visible DOM of a website
