@@ -1,0 +1,108 @@
+.slant{
+    background-color:red;
+    color: bisque;
+    height:400px;
+    width: 100%;
+    top: 0;
+    left:0;
+    position: absolute;
+    text-align: center;
+    font-size: 80px;
+    border-radius: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+    
+}
+h2{
+    color: bisque;
+}
+.slant2{
+    background-color: red;
+    height:400px;
+    width: 100%;
+    top: 100px;
+    left:0;
+    position: absolute;
+    transform:skewY(5deg);
+    transform-origin: top left;
+    z-index: -1;
+    
+}
+.slant3{
+    background-color: orange;
+    height:400px;
+    width: 100%;
+    left:0;
+    margin: 0;
+    padding:0;
+    position: absolute;
+    top:500;
+    z-index: -2;
+
+    text-align: center;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+}
+.slant4{
+    background-color: orange;
+    height:400px;
+    width: 100%;
+    top:150px;
+    left:0;
+    position: absolute;
+    transform:skewY(5deg);
+    z-index: -3;
+    
+}
+.slant5{
+    background-color:grey;
+    height:400px;
+    width: 100%;
+    left:0;
+    margin: 0;
+    padding:0;
+    position: absolute;
+    top:950px;
+    z-index:-4;
+    text-align: center;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+}
+.slant6{
+    background-color:grey;
+    height:400px;
+    width: 100%;
+    top:150px;
+    left:0;
+    position: absolute;
+    transform:skewY(5deg);
+    z-index:-5;
+    
+}
+.slant7{
+    background-color:black;
+    height:400px;
+    width: 100%;
+    top:1200;
+    left:0;
+    position: absolute;
+    
+    z-index:-6;
+    
+}
+.top{
+    background-color:black;
+    color: bisque;
+    height:200px;
+    width: 100%;
+    top: 0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+}
+
